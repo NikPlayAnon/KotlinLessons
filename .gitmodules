@@ -1,0 +1,6 @@
+[submodule "KotlinLessons-KotlinLesson1_1"]
+	path = KotlinLessons-KotlinLesson1_1
+	url = https://github.com/NikPlayAnon/KotlinLessons-KotlinLesson1_1.git
+[submodule "KotlinLessons-KotlinLesson1_DZ"]
+	path = KotlinLessons-KotlinLesson1_DZ
+	url = https://github.com/NikPlayAnon/KotlinLessons-KotlinLesson1_DZ.git
