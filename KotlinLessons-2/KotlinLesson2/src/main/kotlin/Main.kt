@@ -1,7 +1,12 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
-
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+import ValueChangeListener
+import ValueChangeListener.Holder
+fun main() {
+    val holder = Holder.createHolder(Holder.DEFAULT_NUMBER)
+    holder.number = 9
+    holder.listener = object : ValueChangeListener {
+        override fun onNewValue(number: Int) {
+            println("New value is $number")
+        }
+    }
+    holder.number = 1
 }
